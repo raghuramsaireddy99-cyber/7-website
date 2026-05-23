@@ -3780,6 +3780,180 @@ input[type="button"].btn-block {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+
+    /* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar{
+    width: 100%;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.logo{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* ========================= */
+/* NAV LINKS */
+/* ========================= */
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #d89a33;
+}
+
+/* ========================= */
+/* SEARCH FILTER */
+/* ========================= */
+
+.search-filter{
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-left: 40px;
+
+    flex-wrap: wrap;
+}
+
+/* ========================= */
+/* SELECT BOXES */
+/* ========================= */
+
+.search-filter select{
+
+    height: 48px;
+    padding: 0 18px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.95);
+
+    color: #222;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    min-width: 180px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.search-filter select:focus{
+
+    box-shadow: 0 0 0 3px rgba(216,154,51,0.25);
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.search-filter button{
+
+    height: 48px;
+    padding: 0 28px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+
+    background: #d89a33;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.search-filter button:hover{
+
+    background: #bf8423;
+    transform: translateY(-2px);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:1200px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search-filter{
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-filter{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .search-filter select,
+    .search-filter button{
+        width: 100%;
+    }
+}  
+
 .card {
   position: relative;
   display: -webkit-box;
